@@ -129,15 +129,25 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    background-color: rgba(0, 0, 0, 0.6);
+ 
+    max-width: 800px;
+    max-height: 500px;
   }
   
+  .cheff{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    max-height: 500px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
   .cheffPhoto {
     background-image: url("/Users/victorcavalcanti/Desktop/restaurante/webpack-practice/src/images/cheff.jpg");
     background-size: contain; 
     background-repeat: no-repeat;
     background-position: center;
 
-    height: 600px;
-    width: 600px;
+    height: 700px;
+    width: 700px;
   }
