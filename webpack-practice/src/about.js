@@ -5,10 +5,17 @@ export const about = () => {
     title.classList.add("title")
     title.textContent = "About us";
     content.appendChild(title);
+    const aboutUs = document.createElement("div")
+    aboutUs.classList.add("aboutUs")
+    aboutUs.innerHTML = `
+    <div class="cheff">
+                <div class="cheffPhoto"></div>
+                <p>A fictional restaurant. Stabilished in 2022</p>
+            </div>
+    </div>
+    `
 
-    const description = document.createElement("h3")
-    description.textContent ="Lorem ipsum";
-    content.appendChild(description)
-    
+    content.appendChild(aboutUs)
+
     document.body.appendChild(content);
 }

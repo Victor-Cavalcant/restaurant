@@ -8,7 +8,6 @@ body {
     background-image: url("/Users/victorcavalcanti/Desktop/restaurante/webpack-practice/src/images/spices.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
   }
 
   .title {
@@ -18,7 +17,12 @@ body {
     font-weight: bold;
     font-style: italic;
     margin-top: 5vh;
-    background-color: rgba(0, 0, 0, 0.5);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-style: italic;
   }
 
   h3 {
@@ -28,8 +32,9 @@ body {
     max-width: 280px;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-    
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 30px;
+    font-style: italic;
   }
 
   .content {
@@ -48,7 +53,7 @@ body {
   }
 
   .navButtons button {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     border: none;
     color: white;
     padding: 5px 10px;
@@ -63,4 +68,76 @@ body {
 
   .navButtons button:hover {
     background-color: rgba(0, 0, 0, 1);
+  }
+
+  .dishes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+
+  }
+
+  .dish{
+    margin: 20px;
+  }
+
+  .brunch {
+    background-image: url("/Users/victorcavalcanti/Desktop/restaurante/webpack-practice/src/images/brunch.jpg");
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 500px;
+    width: 500px;
+    
+  }
+
+  .steak {
+    background-image: url("/Users/victorcavalcanti/Desktop/restaurante/webpack-practice/src/images/steak.jpg");
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 500px;
+    width: 500px;
+  }
+
+  .vegetarian {
+    background-image: url("/Users/victorcavalcanti/Desktop/restaurante/webpack-practice/src/images/veggie.jpg");
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 500px;
+    width: 500px;
+  }
+
+  p {
+    text-align: center;
+    font-size: 2rem;
+    font-style: italic;
+  }
+
+  .aboutUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .cheffPhoto {
+    background-image: url("/Users/victorcavalcanti/Desktop/restaurante/webpack-practice/src/images/cheff.jpg");
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 600px;
+    width: 600px;
   }

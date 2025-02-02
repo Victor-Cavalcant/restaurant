@@ -7,10 +7,24 @@ export const menu = () => {
     title.textContent = "Menu";
     content.appendChild(title);
 
-    const description = document.createElement("h3")
-    description.textContent ="PLATES";
-    content.appendChild(description)
-    
+    const dishes = document.createElement("div")
+    dishes.classList.add("dishes")
+    dishes.innerHTML = `
+    <div class="dish">
+                <div class="brunch"></div>
+                <p>brunch</p>
+            </div>
+            <div class="dish">
+                <div class="steak"></div>
+                <p>steak</p>
+            </div>
+            <div class="dish">
+                <div class="vegetarian"></div>
+                <p>vegetarian</p>
+    </div>
+    `
+
+    content.appendChild(dishes)
+
     document.body.appendChild(content);
 }
-   
