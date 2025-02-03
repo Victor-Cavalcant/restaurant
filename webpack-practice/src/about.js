@@ -10,7 +10,7 @@ export const about = () => {
     aboutUs.innerHTML = `
     <div class="cheff">
                 <div class="cheffPhoto"></div>
-                <p>A fictional restaurant. Stabilished in 2022</p>
+                <p class="motto">A fictional restaurant. Stabilished in 2022</p>
             </div>
     </div>
     `

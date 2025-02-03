@@ -76,7 +76,7 @@ body {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
+    margin-top: 10vh;
     background-color: rgba(0, 0, 0, 0.6);
 
   }
@@ -91,7 +91,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 
-    height: 500px;
+    height: 320px;
     width: 500px;
     
   }
@@ -102,7 +102,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 
-    height: 500px;
+    height: 320px;
     width: 500px;
   }
 
@@ -112,7 +112,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 
-    height: 500px;
+    height: 320px;
     width: 500px;
   }
 
@@ -129,8 +129,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
- 
-    max-width: 800px;
+    max-width: 8git00px;
     max-height: 500px;
   }
   
@@ -138,10 +137,14 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
-    max-height: 500px;
-    background-color: rgba(0, 0, 0, 0.6);
+    max-height: 400px;
+   
   }
-
+  .motto{
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 30px;
+  }
   .cheffPhoto {
     background-image: url("/Users/victorcavalcanti/Desktop/restaurante/webpack-practice/src/images/cheff.jpg");
     background-size: contain; 
@@ -151,3 +154,50 @@ body {
     height: 700px;
     width: 700px;
   }
+
+  @media (max-width: 1024px) {
+    .title {
+      font-size: 2.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2rem;
+    }
+  
+    h3 {
+      margin-top: 40vh;
+    }
+  
+    .dishes {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title {
+      font-size: 1.5rem;
+    }
+  
+    h3 {
+      margin-top: 30vh;
+      font-size: 1rem;
+    }
+  
+    .navButtons {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navButtons button {
+      width: 100%;
+      font-size: 0.9rem;
+    }
+    .motto{
+      font-size: 1.3rem;
+    }
+
+  }
+  
