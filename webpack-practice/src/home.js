@@ -1,4 +1,13 @@
 export const home = () => {
+    function setFullHeight() {
+        document.body.style.height = `${window.innerHeight}px`;
+      }
+      
+      window.addEventListener("resize", setFullHeight);
+      window.addEventListener("load", setFullHeight);
+      
+      setFullHeight();
+
     const content = document.querySelector(".content");
     content.classList.add = "content";
     const title = document.createElement("h1");

@@ -1,203 +1,208 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
-body {
-    background-image: url("/Users/victorcavalcanti/Desktop/restaurante/webpack-practice/src/images/spices.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
 
+
+body {
+  background-image: url("/Users/victorcavalcanti/Desktop/restaurante/webpack-practice/src/images/spices.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: auto;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-style: italic;
+}
+
+h3 {
+  color: white;
+  text-align: center;
+  margin-top: 60vh;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 30px;
+  font-style: italic;
+}
+
+.content {
+  color: white;
+  text-align: center;
+}
+
+.navButtons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navButtons button {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.navButtons button:hover {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.dishes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vh;
+  background-color: rgba(0, 0, 0, 0.6);
+
+}
+
+.dish {
+  margin: 20px;
+}
+
+.brunch {
+  background-image: url("/Users/victorcavalcanti/Desktop/restaurante/webpack-practice/src/images/brunch.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  height: 280px;
+  width: 400px;
+
+}
+
+.steak {
+  background-image: url("/Users/victorcavalcanti/Desktop/restaurante/webpack-practice/src/images/steak.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  height: 280px;
+  width: 400px;
+}
+
+.vegetarian {
+  background-image: url("/Users/victorcavalcanti/Desktop/restaurante/webpack-practice/src/images/veggie.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  height: 280px;
+  width: 400px;
+}
+
+.aboutUs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  max-width: 8git00px;
+  max-height: 500px;
+}
+
+.cheff {
+  margin-top: 50px;
+  max-height: 400px;
+}
+
+.motto {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 30px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 2rem;
+  font-style: italic;
+  max-width: 600px;
+}
+
+.cheffPhoto {
+  background-image: url("/Users/victorcavalcanti/Desktop/restaurante/webpack-practice/src/images/cheff.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: auto;
+  margin-left: auto;
+
+  height: 500px;
+  width: 500px;
+}
+
+@media (max-width: 1024px) {
   .title {
-    color: white;
-    text-align: center;
-    font-size: 3rem;
-    font-weight: bold;
-    font-style: italic;
-    margin-top: 5vh;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 400px;
-    border-radius: 30px;
-    background-color: rgba(0, 0, 0, 0.6);
-    font-style: italic;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
   }
 
   h3 {
-    color: white;
-    text-align: center;
-    margin-top: 60vh;
-    max-width: 280px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 30px;
-    font-style: italic;
-  }
-
-  .content {
-    color: white;
-    text-align: center;
-  }
-
-  .navButtons {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .navButtons button {
-    background-color: rgba(0, 0, 0, 0.6);
-    border: none;
-    color: white;
-    padding: 5px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1rem;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 20px;
-  }
-
-  .navButtons button:hover {
-    background-color: rgba(0, 0, 0, 1);
+    margin-top: 40vh;
   }
 
   .dishes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10vh;
-    background-color: rgba(0, 0, 0, 0.6);
-
-  }
-
-  .dish{
-    margin: 20px;
-  }
-
-  .brunch {
-    background-image: url("/Users/victorcavalcanti/Desktop/restaurante/webpack-practice/src/images/brunch.jpg");
-    background-size: contain; 
-    background-repeat: no-repeat;
-    background-position: center;
-
-    height: 320px;
-    width: 500px;
-    
-  }
-
-  .steak {
-    background-image: url("/Users/victorcavalcanti/Desktop/restaurante/webpack-practice/src/images/steak.jpg");
-    background-size: contain; 
-    background-repeat: no-repeat;
-    background-position: center;
-
-    height: 320px;
-    width: 500px;
-  }
-
-  .vegetarian {
-    background-image: url("/Users/victorcavalcanti/Desktop/restaurante/webpack-practice/src/images/veggie.jpg");
-    background-size: contain; 
-    background-repeat: no-repeat;
-    background-position: center;
-
-    height: 320px;
-    width: 500px;
-  }
-
-  p {
-    text-align: center;
-    font-size: 2rem;
-    font-style: italic;
-  }
-
-  .aboutUs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    max-width: 8git00px;
-    max-height: 500px;
-  }
-  
-  .cheff{
-    display: flex;
     flex-direction: column;
-    margin-top: 50px;
-    max-height: 400px;
-   
+    align-items: center;
   }
-  .motto{
-    margin-top: 20px;
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 30px;
-  }
-  .cheffPhoto {
-    background-image: url("/Users/victorcavalcanti/Desktop/restaurante/webpack-practice/src/images/cheff.jpg");
-    background-size: contain; 
-    background-repeat: no-repeat;
-    background-position: center;
+}
 
-    height: 700px;
-    width: 700px;
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
   }
 
-  @media (max-width: 1024px) {
-    .title {
-      font-size: 2.5rem;
-    }
+  h3 {
+    margin-top: 30vh;
+    font-size: 1rem;
   }
-  
-  @media (max-width: 768px) {
-    .title {
-      font-size: 2rem;
-    }
-  
-    h3 {
-      margin-top: 40vh;
-    }
-  
-    .dishes {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .title {
-      font-size: 1.5rem;
-    }
-  
-    h3 {
-      margin-top: 30vh;
-      font-size: 1rem;
-    }
-  
-    .navButtons {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .navButtons button {
-      width: 100%;
-      font-size: 0.9rem;
-    }
-    .motto{
-      font-size: 1.3rem;
-    }
 
+  .navButtons {
+    flex-direction: column;
+    align-items: center;
   }
-  
+
+  .navButtons button {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .motto {
+    font-size: 1.3rem;
+  }
+
+}

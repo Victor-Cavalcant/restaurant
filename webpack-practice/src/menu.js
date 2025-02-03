@@ -1,5 +1,15 @@
 
 export const menu = () => {
+    function adjustBodySize() {
+        document.body.style.width = "100%";
+        document.body.style.height = "auto";
+      }
+      
+      window.addEventListener("resize", adjustBodySize);
+      window.addEventListener("load", adjustBodySize);
+      
+      adjustBodySize();
+
     const content = document.querySelector(".content");
     content.classList.add = "content";
     const title = document.createElement("h1");

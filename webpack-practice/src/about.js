@@ -1,4 +1,14 @@
 export const about = () => {
+    function setFullHeight() {
+        document.body.style.height = `${window.innerHeight}px`;
+    }
+
+    window.addEventListener("resize", setFullHeight);
+    window.addEventListener("load", setFullHeight);
+
+    setFullHeight();
+
+
     const content = document.querySelector(".content");
     content.classList.add = "content";
     const title = document.createElement("h1");
@@ -9,10 +19,11 @@ export const about = () => {
     aboutUs.classList.add("aboutUs")
     aboutUs.innerHTML = `
     <div class="cheff">
-                <div class="cheffPhoto"></div>
+            <div class="cheffPhoto"></div>
                 <p class="motto">A fictional restaurant. Stabilished in 2022</p>
-            </div>
+            </div>             
     </div>
+    
     `
 
     content.appendChild(aboutUs)
